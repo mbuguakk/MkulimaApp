@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "343104793304",
+    "firebase_url": "https://mkulima-app-b394f-4dd2b.firebaseio.com",
+    "project_id": "mkulima-app-b394f",
+    "storage_bucket": "mkulima-app-b394f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343104793304:android:021545093e36d331",
+        "android_client_info": {
+          "package_name": "com.example.anslo.mkulimaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343104793304-3uco3sl89e3etrkev7eut0bp4hbbcm2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anslo.mkulimaapp",
+            "certificate_hash": "a3450eb33cadc15cd3bbd403721059ba0a107334"
+          }
+        },
+        {
+          "client_id": "343104793304-kqkaq70c81gvmagb91utb31i3d1frbrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR1YyIn1AnAj03tXxgsxSe5C5mbm7dCyo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343104793304-kqkaq70c81gvmagb91utb31i3d1frbrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
