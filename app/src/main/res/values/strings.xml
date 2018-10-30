@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Mkulima App</string>
+    <string name="app_name">MKULIMA APP</string>
+    <string name="version">version 1.0</string>
+    <string name="developers">Developers: </string>
+    <string name="paul">Paul Mburu</string>
+    <string name="juma">Juma Sam</string>
 </resources>
