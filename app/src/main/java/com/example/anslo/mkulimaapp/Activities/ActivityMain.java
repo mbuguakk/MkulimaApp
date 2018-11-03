@@ -1,5 +1,6 @@
 package com.example.anslo.mkulimaapp.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -8,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.anslo.mkulimaapp.Adapters.ViewPagerAdapter;
 import com.example.anslo.mkulimaapp.Fragments.ClimateFragment;
@@ -55,5 +58,20 @@ public class ActivityMain extends AppCompatActivity{
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_activity_main,menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==R.id.action_settings){
+            Toast.makeText(this,item.getTitle()+" clicked ",Toast.LENGTH_SHORT).show();
+            Intent i=new Intent(this,ActivitySettings.class);
+            startActivity(i);
+        }else if(id==R.id.action_about){
+            Toast.makeText(this,item.getTitle()+" clicked ",Toast.LENGTH_SHORT).show();
+            Intent i=new Intent(this,ActivityAbout.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
