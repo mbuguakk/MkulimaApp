@@ -13,13 +13,24 @@
         <!--android:tint="@color/colorAccent"-->
         <!--android:src="@drawable/baseline_filter_vintage"/>-->
     <TextView
-        android:text="MKULIMA APP"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:textStyle="bold"
-        android:textColor="@color/colorAccent"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        android:layout_marginTop="43dp"
+        android:text="MKULIMA APP"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/baseline_filter_vintage"
+        android:tint="#009688" />
 </RelativeLayout>
