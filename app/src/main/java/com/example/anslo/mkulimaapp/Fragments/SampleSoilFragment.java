@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.anslo.mkulimaapp.Activities.ActivityMain;
+import com.example.anslo.mkulimaapp.Activities.ActivitySampleSoilDetails;
 import com.example.anslo.mkulimaapp.Data.Constant;
 import com.example.anslo.mkulimaapp.Data.SampleSoil;
 import com.example.anslo.mkulimaapp.Data.Tools;
@@ -59,6 +60,15 @@ public class SampleSoilFragment extends Fragment {
         final ListView listView = (ListView) view.findViewById(R.id.list);
         //set adapter to the ListView
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String name=items.get(position);
+                ActivitySampleSoilDetails.navigate(((ActivityMain)getActivity()),view,items.get(position));
+                Toast.makeText(getContext(),name+" Clicked",Toast.LENGTH_SHORT).show();
+            }
+        });
 
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
@@ -105,7 +115,7 @@ public class SampleSoilFragment extends Fragment {
             public void onClick(DialogInterface dialog, int which) {
                 String name = input.getText().toString().trim();
                 if (name.isEmpty()) {
-                    Toast.makeText(getActivity(), "Sample Soil name cannot empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Sample Soil name cannot be empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(!name.isEmpty())
