@@ -40,8 +40,8 @@ public class ActivityMain extends AppCompatActivity{
 
         ViewPagerAdapter adapter=new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SampleSoilFragment(),"Sample Soil");
-        adapter.addFragment(new ClimateFragment(),"Climate");
         adapter.addFragment(new FarmingTipsFragment(),"Farming tips");
+        adapter.addFragment(new ClimateFragment(),"Climate");
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
 
@@ -49,7 +49,7 @@ public class ActivityMain extends AppCompatActivity{
     private void initToolbar(){
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Sample soil");
+        getSupportActionBar().setTitle("Mkulima App");
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
     }
