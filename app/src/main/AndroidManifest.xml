@@ -19,8 +19,16 @@
         <activity
             android:name=".Activities.ActivityMain"
             android:configChanges="orientation|keyboardHidden|screenSize" />
-        <activity android:name=".Activities.ActivitySettings"/>
-        <activity android:name=".Activities.ActivityAbout"/>
+
+        <activity android:name=".Activities.ActivitySampleSoilDetails"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity android:name=".Activities.ActivitySettings"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".Activities.ActivityAbout"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".Activities.ActivityTheDetails"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
     </application>
 
 </manifest>
